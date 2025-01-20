@@ -36,7 +36,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+  gem "debug", platforms: %i[ mri windows ]
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
@@ -50,9 +50,9 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'simplecov'
+  gem "simplecov"
   gem "shoulda-matchers"
-  gem 'rspec-rails'
+  gem "rspec-rails"
   gem "capybara"
   gem "selenium-webdriver"
 end
@@ -67,5 +67,4 @@ gem "jsonapi-serializer"# [https://github.com/jsonapi-serializer/jsonapi-seriali
 gem "jwt"# [https://github.com/jwt/ruby-jwt/blob/main/README.md]
 gem "pg"# [https://github.com/ged/ruby-pg]
 
-gem 'graphql-batch' # [https://github.com/Shopify/graphql-batch]
-  #Usage: Update your Types::QueryType to use batching when fetching data
+gem "graphql-batch" # [https://github.com/Shopify/graphql-batch] #Usage: Update your Types::QueryType to use batching when fetching data

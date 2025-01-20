@@ -104,7 +104,7 @@ jobs:
             ${{ runner.os }}-bundle-
 
       - name: Install dependencies
-        run: bundle install
+        run: bundle install --without development
 
       - name: Setup database
         env:
