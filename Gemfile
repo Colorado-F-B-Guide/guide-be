@@ -45,7 +45,6 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
   gem "pry"
 end
 
@@ -58,6 +57,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem "web-console", group: :development # [https://github.com/rails/web-console]
 gem "graphql", "~> 2.4"
 gem "graphiql-rails", group: :development# [https://github.com/rmosolgo/graphiql-rails]
 gem "rack-cors"# [https://github.com/cyu/rack-cors]
