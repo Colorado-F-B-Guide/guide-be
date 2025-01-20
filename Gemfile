@@ -5,7 +5,7 @@ gem "rails", "~> 7.2.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 1.4"
+# gem "sqlite3", ">= 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
@@ -43,28 +43,29 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-end
 
-group :development, :test do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem 'rspec-rails'
-  gem "capybara"
-  gem "selenium-webdriver"
   gem "pry"
-  gem "shoulda-matchers"
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'simplecov'
+  gem "shoulda-matchers"
+  gem 'rspec-rails'
+  gem "capybara"
+  gem "selenium-webdriver"
 end
 
 gem "graphql", "~> 2.4"
-gem "graphiql-rails", group: :development
-gem "rack-cors"
-gem "jsonapi-serializer"
-gem "rolify"
-gem "pundit", "~> 2.4"
-gem "jwt"
-gem "pg"
+gem "graphiql-rails", group: :development# [https://github.com/rmosolgo/graphiql-rails]
+gem "rack-cors"# [https://github.com/cyu/rack-cors]
+gem "jsonapi-serializer"# [https://github.com/jsonapi-serializer/jsonapi-serializer?tab=readme-ov-file]
+# gem "rolify"# [https://github.com/RolifyCommunity/rolify]
+# gem "pundit", "~> 2.4"# [https://github.com/varvet/pundit/blob/main/README.md]
+gem "jwt"# [https://github.com/jwt/ruby-jwt/blob/main/README.md]
+gem "pg"# [https://github.com/ged/ruby-pg]
+
+gem 'graphql-batch' # [https://github.com/Shopify/graphql-batch]
+  #Usage: Update your Types::QueryType to use batching when fetching data
