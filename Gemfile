@@ -58,7 +58,7 @@ group :test do
 end
 
 gem "web-console", group: :development # [https://github.com/rails/web-console]
-gem "graphql", "~> 2.4"
+gem "graphql", "~> 2.4" # [https://github.com/rmosolgo/graphql-ruby]
 gem "graphiql-rails", group: :development# [https://github.com/rmosolgo/graphiql-rails]
 gem "rack-cors"# [https://github.com/cyu/rack-cors]
 gem "jsonapi-serializer"# [https://github.com/jsonapi-serializer/jsonapi-serializer?tab=readme-ov-file]
