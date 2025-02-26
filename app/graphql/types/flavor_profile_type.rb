@@ -15,6 +15,6 @@ module Types
 
     # Can add any other relationships you want to expose
     field :beer_style, Types::BeerStyleType, null: false
-    field :recipe_category, Types::RecipeCategoryType, null: false  
+    field :recipe_category, Types::RecipeCategoryType, null: false
   end
 end

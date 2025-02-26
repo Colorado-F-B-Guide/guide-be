@@ -8,6 +8,6 @@ class CreateFavorites < ActiveRecord::Migration[7.2]
       t.timestamps
     end
 
-    add_index :favorites, [:favoriteable_type, :favoriteable_id]
+    add_index :favorites, [ :favoriteable_type, :favoriteable_id ]
   end
 end

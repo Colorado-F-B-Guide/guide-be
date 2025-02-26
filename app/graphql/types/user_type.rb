@@ -8,6 +8,6 @@ module Types
     # field :password_digest, String
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
-    field :favorites, [Types::FavoriteType], null: false
+    field :favorites, [ Types::FavoriteType ], null: false
   end
 end
